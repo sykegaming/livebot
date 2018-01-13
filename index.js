@@ -374,11 +374,6 @@ bot.on("message", (message)=>{
                       "` to `" + server.prefix +
                       "`. Please use the new prefix.");
     }
-
-client.on('message', message => {
-  if (message.content.startsWith('ping!')) {
-    message.reply('pong!');
-  }
 });
 
 
