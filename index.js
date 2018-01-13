@@ -1,5 +1,4 @@
-/* jshint esversion: 6 */
-// args = TOKEN CLIENTID INTERVAL
+
 const https = require("https"),
       fs = require("fs"),
       Discord = require("discord.js"),
@@ -13,7 +12,11 @@ const https = require("https"),
       // two minutes
       timeout = 2*60*1000;
 var servers = [];
-    message = "@the meme machine"
+
+
+bot.user.setStatus('Online')
+bot.user.setGame('Staring at Twitch')
+
 
 
 function leadingZero(d){
