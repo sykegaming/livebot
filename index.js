@@ -376,11 +376,12 @@ bot.on("message", (message)=>{
     }
 });
 
-bot.on("message", function (msg) {
-	// if message begins with "ping"
-	if (msg.content.indexOf("ping") === 0) {
-		// send a message to the channel the ping message was sent in.
-		bot.sendMessage(msg.channel, "pong!");
+client.on('message', message => {
+  if (message.content.startsWith('ping!')) {
+    message.reply('pong!');
+  }
+});
+
 
 
 bot.login(token).then((token)=>{
