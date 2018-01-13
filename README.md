@@ -18,7 +18,14 @@ Use `/configure` (see below) to configure the bot for your discord server.
 
 ## Usage
 
-`node discord-twitch-bot 
+`node discord-twitch-bot TOKEN CLIENTID INTERVAL`
+
+```
+TOKEN           Discord app bot user token
+CLIENTID        Twitch Client-ID
+INTERVAL        Interval in seconds in which to check for updates
+```
+
 
 ### Chat commands
 
