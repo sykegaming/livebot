@@ -394,3 +394,4 @@ bot.login(token).then((token)=>{
     }
 });
 
+bot.user.setStatus("Staring at Twitch")
