@@ -14,9 +14,19 @@ const https = require("https"),
 var servers = [];
 
 
-bot.user.setStatus('Online')
-bot.user.setGame('Staring at Twitch')
 
+const https = require("https"),
+      fs = require("fs"),
+      Discord = require("discord.js"),
+      bot = new Discord.Client(),
+      args = process.argv.slice(2),
+      channelPath = __dirname + "/.channels",
+      twitchClientID = "j0dwdjzqkzrsnepoo0a81f71a14zmb",
+      interval = 300 * 1000,
+      token = "NDAxNjEzNzQ4MTY0NjI0Mzg0.DTs-jw.__r2P8Ka8etoeKSTGL94LtI_sgk",
+      apiUrl = "https://api.twitch.tv/kraken",
+      timeout = 2*60*1000;
+var servers = [];
 
 
 function leadingZero(d){
@@ -397,4 +407,3 @@ bot.login(token).then((token)=>{
     }
 });
 
-bot.user.setStatus("Staring at Twitch")
