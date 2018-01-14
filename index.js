@@ -396,6 +396,7 @@ bot.on("message", (message)=>{
                                "[configure args|list|add channel_name|remove channel_name]");
         }
     }else if(message.content[0] == server.lastPrefix){
+        consolelog = ("fucked it fam");
     }
 });
 
