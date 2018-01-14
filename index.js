@@ -396,9 +396,6 @@ bot.on("message", (message)=>{
                                "[configure args|list|add channel_name|remove channel_name]");
         }
     }else if(message.content[0] == server.lastPrefix){
-        message.reply("The prefix was changed from `" + server.lastPrefix +
-                      "` to `" + server.prefix +
-                      "`. Please use the new prefix.");
     }
 });
 
