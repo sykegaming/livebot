@@ -24,7 +24,7 @@ app.listen(port, () => {
 });
 
 setInterval(() => {
-    http.get('http://your-app-name.herokuapp.com');
+    http.get('http://discordgonelive.herokuapp.com');
   }, 900000);
 
 
